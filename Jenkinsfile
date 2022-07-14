@@ -5,7 +5,7 @@ pipeline {
         stage('docker build') {
             steps {
                 script {
-                    sh "docker build -f Dockerfile -t paulocgc/devops-crash-course:1.0.0-${BUILD_ID} 02-primer-pipeline"
+                    sh "docker build -f 02-primer-pipeline/Dockerfile -t paulocgc/devops-crash-course:1.0.0-${BUILD_ID} 02-primer-pipeline"
                 }
             }
         }
